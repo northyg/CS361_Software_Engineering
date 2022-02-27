@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "74194e08-e5b9-42f6-8ee4-cefc2ede5b3a",
+		"name": "cs361_images",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post image data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"return 201;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"image_name\": \"Cat\",\n    \"image_path\": \"https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/store_data",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"store_data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post image data 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"return 201;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"image_name\": \"Dog\",\n    \"image_path\": \"/d/o/g\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/store_data",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"store_data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post image data 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"return 201;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"image_name\": \"Horse\",\n    \"image_path\": \"/h/o/r/s/e/y.jpg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/store_data",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"store_data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update image path",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"return 201;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"image_name\": \"Cat\",\n    \"image_path\": \"/a/b/c.jpg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/update_data",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"update_data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get image path",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"return 201;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"image_name\": \"Cat\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/get_data",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"get_data"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
